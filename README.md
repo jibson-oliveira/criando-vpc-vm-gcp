@@ -27,3 +27,13 @@ Para criar a nossa VM, iremos clicar no botão "criar instância". Nessa nova te
 Próximo passo será a escolha da configuração da máquina. Cada máquina tem um propósito e um objetivo, por isso é necessário saber qual tipo de aplicação será utilizada. Na pagina de documentação do Compute Engine tem uma página que pode te auxiliar a escolher qual tipo de máquina será o ideal para a sua aplicação (https://cloud.google.com/compute/docs/machine-resource?hl=pt-br#recommendations_for_machine_types)
 
 Para o exemplo abaixo foi utilizado uma VM do tipo e2-medium que possui 2vCPU e 4 GB de memória
+
+Próximo passo será escolher o disco de inicialização. Você poderá escolher entre imagens Windows e Linux públicas, imagens personalizadas ou snapshots de discos já existentes. Também poderá escolher os tipos de discos de inicialização e determinar o tamanho desse disco.
+
+Na opção de firewall, você poderá permitir se essa máquina irá receber trafego HTTP/HTTPS
+
+Ao clicar em opções avançadas, você poderá atribuir uma tag de rede. Essa tag poderá ser usada para configurações de regras de firewall configuradas no VPC. Assim você poderá criar uma regra e vincular a uma tag e com essa tag, definir essa regra para várias VMs. Você também poderá configurar a rede e a sub-rede a qual essa VM irá se comunicar. Conforme configurado no tópico anterior, nós utilizaremos a vpc-geral com a sub-rede subnet-geral
+
+Entre outras opções avançadas, você poderá adicionar novos discos a essa VM, onde poderá ser armazenados os dados separadamente do disco de inicialização, poderá criar chaves SSH para conexão remota, poderá criar politicas de proteção contra exclusão da VM entre outras funcionalidades.
+
+Ao finalizar a criação nós poderemos verificar que a máquina se encontra ativa e poderemos acessá-la ao clicar no botão SSH 
