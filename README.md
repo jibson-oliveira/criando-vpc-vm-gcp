@@ -16,9 +16,14 @@ Com esses passos, a sua sub-rede VPC e a sua rede VPC já estarão prontas, pró
 
 Também temos a configuração do modo de roteamento. No exemplo abaixo utilizamos o modo regional. Após isso finalizamos a criação da nossa rede e sub-rede
 
-
-
-
 ## Compute Engine
 
 Compute Engine é o produto do Google Cloud Platform onde você poderá criar suas maquinas virtuais e fazer instalação das suas aplicações. Ao acessar o console do GCP (console.cloud.google.com), você poderá acessar essa ferramenta através do botão "criar uma VM" que irá aparecer no dashboard, através do menu lateral esquerdo e ir até a opção "Compute Engine" ou digitando na barra de pesquisa.
+
+### Criando uma Virtual Machine (VM)
+
+Para criar a nossa VM, iremos clicar no botão "criar instância". Nessa nova tela iremos dar o nome pra nossa VM. Caso haja necessidade, você pode criar uma label pra vincular a essa VM. Iremos também escolher a região e zona onde ela estará alocada. A região e zona são permanentes e a escolha interfere na estimativa mensal de custo da VM. No exemplo abaixo utilizaremos a região East-1 pois foi a mesma utilizada na criação da VPC do tópico anterior.
+
+Próximo passo será a escolha da configuração da máquina. Cada máquina tem um propósito e um objetivo, por isso é necessário saber qual tipo de aplicação será utilizada. Na pagina de documentação do Compute Engine tem uma página que pode te auxiliar a escolher qual tipo de máquina será o ideal para a sua aplicação (https://cloud.google.com/compute/docs/machine-resource?hl=pt-br#recommendations_for_machine_types)
+
+Para o exemplo abaixo foi utilizado uma VM do tipo e2-medium que possui 2vCPU e 4 GB de memória
