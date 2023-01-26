@@ -25,13 +25,12 @@ Mais abaixo você poderá criar as sub-redes. Essas sub-redes serão utilizadas 
 
 Com esses passos, a sua sub-rede VPC e a sua rede VPC já estarão prontas, próximo passo será configurar as regras de firewall, caso haja necessidade. O VPC já vem com algumas regras padrão então, essas serão as utilizadas nesse exemplo
 
-![](/images/firewall.jpg)
+![](/images/firewall.JPG)
 > Campo firewall com algumas regras default
 
 Também temos a configuração do modo de roteamento. No exemplo abaixo utilizamos o modo regional. Após isso finalizamos a criação da nossa rede e sub-rede
-
 ![](/images/roteamento.JPG)
-> 
+> Tela de definição do roteamento
 
 ## Compute Engine
 
@@ -45,12 +44,18 @@ Próximo passo será a escolha da configuração da máquina. Cada máquina tem 
 
 Para o exemplo abaixo foi utilizado uma VM do tipo e2-medium que possui 2vCPU e 4 GB de memória
 
+![](/images/criar-vm.JPG)
+> Tela de criação da VM onde poderemos definir o nome, região, zona e configuração da máquina
+
 Próximo passo será escolher o disco de inicialização. Você poderá escolher entre imagens Windows e Linux públicas, imagens personalizadas ou snapshots de discos já existentes. Também poderá escolher os tipos de discos de inicialização e determinar o tamanho desse disco.
+![](/images/imagens-disco.JPG)
 
 Na opção de firewall, você poderá permitir se essa máquina irá receber trafego HTTP/HTTPS
 
-Ao clicar em opções avançadas, você poderá atribuir uma tag de rede. Essa tag poderá ser usada para configurações de regras de firewall configuradas no VPC. Assim você poderá criar uma regra e vincular a uma tag e com essa tag, definir essa regra para várias VMs. Você também poderá configurar a rede e a sub-rede a qual essa VM irá se comunicar. Conforme configurado no tópico anterior, nós utilizaremos a vpc-geral com a sub-rede subnet-geral
+Ao clicar em opções avançadas, você poderá adicionar novos discos a essa VM, onde poderá ser armazenados os dados separadamente do disco de inicialização, poderá criar chaves SSH para conexão remota, poderá criar politicas de proteção contra exclusão da VM entre outras funcionalidades.
+![](/images/opcoes.JPG)
 
-Entre outras opções avançadas, você poderá adicionar novos discos a essa VM, onde poderá ser armazenados os dados separadamente do disco de inicialização, poderá criar chaves SSH para conexão remota, poderá criar politicas de proteção contra exclusão da VM entre outras funcionalidades.
+Detalhando mais um pouco as opções avançadas e clicando em rede, você poderá atribuir uma tag de rede. Essa tag poderá ser usada para configurações de regras de firewall configuradas no VPC. Assim você poderá criar uma regra e vincular a uma tag e com essa tag, definir essa regra para várias VMs. Você também poderá configurar a rede e a sub-rede a qual essa VM irá se comunicar. Conforme configurado no tópico anterior, nós utilizaremos a vpc-geral com a sub-rede subnet-geral
+![](/images/interface-rede.JPG)
 
 Ao finalizar a criação nós poderemos verificar que a máquina se encontra ativa e poderemos acessá-la ao clicar no botão SSH 
