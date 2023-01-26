@@ -59,3 +59,5 @@ Detalhando mais um pouco as opções avançadas e clicando em rede, você poder�
 ![](/images/interface-rede.JPG)
 
 Ao finalizar a criação nós poderemos verificar que a máquina se encontra ativa e poderemos acessá-la ao clicar no botão SSH 
+
+![](/images/vm-criada.JPG)
