@@ -15,7 +15,7 @@ Ao clicar no botão "criar rede VPC" você poderá iniciar dando um nome a sua n
 
 No exemplo abaixo foi utilizado o nome vpc-geral. Nessa mesma tela você poderá dar maiores descrições sobre a sua rede e poderá também ativar o IPv6.
 
-![](/images/criar-rede.jpg)
+![](/images/criar-rede.JPG)
 > Tela de Criação de Rede no GCP
 
 Mais abaixo você poderá criar as sub-redes. Essas sub-redes serão utilizadas pelas VMs, GKEs e todos os outros recursos que necessitem de uma VPC.Elas podem ser criadas automaticamente ou de modo personalizado. Toda sub-rede é necessaria que seja vinculada a uma região e essa sub-rede só estará disponivel para as maquinas que estiverem na mesma região. Próximo passo será configurar o intervalo de IPv4 utilizado. Caso seja necessario, você poderá ativar o acesso privado e os registros de fluxo da VPC
